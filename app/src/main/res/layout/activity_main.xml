@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFFFFC"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="333dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginBottom="33dp"
+        android:text="Welcome, please enter data to run the counter."
+        android:textAlignment="center"
+        android:textColor="#FF0800"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/dataText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <EditText
+        android:id="@+id/dataText"
+        android:layout_width="104dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Enter seconds"
+        android:inputType="number"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="@color/black"
+        android:text="start"
+        android:textColor="#FA0000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnReset"
+        app:layout_constraintEnd_toStartOf="@+id/btnReset"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="288dp"
+        android:backgroundTint="@color/black"
+        android:text="RESET"
+        android:textColor="#FA0000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStart"
+        app:layout_constraintTop_toBottomOf="@+id/dataText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
